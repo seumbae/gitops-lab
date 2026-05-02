@@ -9,4 +9,4 @@ resources:
 images:
 - name: ohcm0013/hello-app
   newName: ohcm0013/hello-app
-  newTag: 0df5e06
+  newTag: "57498e1"
