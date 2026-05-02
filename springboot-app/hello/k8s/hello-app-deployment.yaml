@@ -16,6 +16,6 @@ spec:
       containers:
       - name: hello-app
         # Kustomize가 이 이미지 태그를 관리
-        image: myanjini/hello-app:latest
+        image: seumbae/hello-app:latest
         ports:
         - containerPort: 8080
