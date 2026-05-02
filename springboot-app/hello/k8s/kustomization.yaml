@@ -7,9 +7,9 @@ resources:
 - hello-app-deployment.yaml
 - hello-app-service.yaml
 images:
+- name: ohcm0013/hello-app
+  newName: ohcm0013/hello-app
+  newTag: 94e9865
 - name: seumbae/hello-app
   newName: seumbae/hello-app
   newTag: 9addc5b
-- name: ohcm0013/hello-app
-  newName: ohcm0013/hello-app
-  newTag: 46f371d
