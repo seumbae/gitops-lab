@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bgd-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/seumbae/gitops-lab.git
+    path: argocd
+    targetRevision: main
+  destination:
+    namespace: bgd
+    server: https://kubernetes.default.svc
+  syncPolicy: 
+    automated: 
+      prune: true
+      selfHeal: true
